@@ -4,6 +4,7 @@
 [![GitHub](https://img.shields.io/github/license/BrunoASNascimento/study_react_alurakut?style=flat-square)](LICENSE)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/BrunoASNascimento/study_react_alurakut.svg?logo=lgtm&logoWidth=18&style=flat-square)](https://lgtm.com/projects/g/BrunoASNascimento/study_react_alurakut/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/BrunoASNascimento/study_react_alurakut.svg?logo=lgtm&logoWidth=18&style=flat-square)](https://lgtm.com/projects/g/BrunoASNascimento/study_react_alurakut/context:javascript)
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=study-react-alurakut&style=flat-square)](https://study-react-alurakut.vercel.app/)
 
 # Example app with styled-components
 
