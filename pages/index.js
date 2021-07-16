@@ -1,101 +1,39 @@
-import styled from "styled-components";
+import MainGrid from "../src/componets/MainGrid";
+import Box from "../src/componets/Box";
+import { AlurakutMenu } from "../src/lib/AlurakutCommons";
 
-const Box = styled.div`
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 16px;
-  /* CSS Pré-Pronto */
-  margin-bottom: 10px;
-  .boxLink {
-    font-size: 14px;
-    color: #2e7bb4;
-    text-decoration: none;
-    font-weight: 800;
-  }
-  .title {
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  .subTitle {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-  .smallTitle {
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #333333;
-    margin-bottom: 20px;
-  }
-  hr {
-    margin-top: 12px;
-    margin-bottom: 8px;
-    border-color: transparent;
-    border-bottom-color: #ecf2fa;
-  }
-  input {
-    width: 100%;
-    background-color: #f4f4f4;
-    color: #333333;
-    border: 0;
-    padding: 14px 16px;
-    margin-bottom: 14px;
-    border-radius: 10000px;
-    ::placeholder {
-      color: #333333;
-      opacity: 1;
-    }
-  }
-  button {
-    border: 0;
-    padding: 8px 12px;
-    color: #ffffff;
-    border-radius: 10000px;
-    background-color: #6f92bb;
-  }
-`;
-
-const MainGrid = styled.main`
-  width: 100%;
-  grid-gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-  padding: 16px;
-  .profileArea {
-    display: none;
-    @media (min-width: 860px) {
-      display: block;
-    }
-  }
-  @media (min-width: 860px) {
-    max-width: 1110px;
-    display: grid;
-    grid-template-areas: "profileArea welcomeArea profileRelationsArea";
-    grid-template-columns: 160px 1fr 312px;
-  }
-`;
+function ProfileSidebar(propriedades) {
+  return (
+    <Box>
+      <img
+        src={`https://github.com/${propriedades.githubUser}.png`}
+        style={{ borderRadius: "8px" }}
+      />
+    </Box>
+  );
+}
 
 export default function Home() {
+  const githubUser = "BrunoasNascimento";
+
   return (
-    <MainGrid>
-      <div className="profileArea" style={{ gridArea: "profileArea" }}>
-        <Box>
-          <img src="https://github.com/BrunoasNascimento.png" />
-        </Box>
-      </div>
-      <div className="welcomeArea" style={{ gridArea: "welcomeArea" }}>
-        <Box>Bem vindo</Box>
-      </div>
-      <div
-        className="profileRelationsArea"
-        style={{ gridArea: "profileRelationsArea" }}
-      >
-        <Box>Comunidades</Box>
-        <Box>Comunidades</Box>
-      </div>
-    </MainGrid>
+    <>
+      <AlurakutMenu />
+      <MainGrid>
+        <div className="profileArea" style={{ gridArea: "profileArea" }}>
+          <ProfileSidebar githubUser={githubUser} />
+        </div>
+        <div className="welcomeArea" style={{ gridArea: "welcomeArea" }}>
+          <Box>Bem vindo</Box>
+        </div>
+        <div
+          className="profileRelationsArea"
+          style={{ gridArea: "profileRelationsArea" }}
+        >
+          <Box>Comunidades</Box>
+          <Box>Comunidades</Box>
+        </div>
+      </MainGrid>
+    </>
   );
 }
