@@ -85,7 +85,7 @@ AlurakutMenu.Wrapper = styled.header`
       font-size: 18px;
     }
     .boxLink {
-      font-size: 18px;
+      font-size: 12px;
       color: #2e7bb4;
       -webkit-text-decoration: none;
       text-decoration: none;
@@ -297,7 +297,7 @@ export function OrkutNostalgicIconSet(props) {
               style={{ gridArea: "number" }}
             >
               {[0, 1, 2].map((_, index) => {
-                const isHeartActive = index <= total - 1;
+                const isHeartActive = index <= total;
                 return (
                   <img
                     key={`orkut__icon_set__${slug}_img_${index}`}

@@ -1,4 +1,4 @@
-# Study react alurakut
+# Study react - Alurakut
 
 ![GitHub top language](https://img.shields.io/github/languages/top/BrunoASNascimento/study_react_alurakut?style=flat-square)
 [![GitHub](https://img.shields.io/github/license/BrunoASNascimento/study_react_alurakut?style=flat-square)](LICENSE)
