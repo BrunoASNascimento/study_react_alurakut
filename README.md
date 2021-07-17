@@ -1,3 +1,11 @@
+# Study react - Alurakut
+
+![GitHub top language](https://img.shields.io/github/languages/top/BrunoASNascimento/study_react_alurakut?style=flat-square)
+[![GitHub](https://img.shields.io/github/license/BrunoASNascimento/study_react_alurakut?style=flat-square)](LICENSE)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/BrunoASNascimento/study_react_alurakut.svg?logo=lgtm&logoWidth=18&style=flat-square)](https://lgtm.com/projects/g/BrunoASNascimento/study_react_alurakut/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/BrunoASNascimento/study_react_alurakut.svg?logo=lgtm&logoWidth=18&style=flat-square)](https://lgtm.com/projects/g/BrunoASNascimento/study_react_alurakut/context:javascript)
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=study-react-alurakut&style=flat-square)](https://study-react-alurakut.vercel.app/)
+
 # Example app with styled-components
 
 This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).

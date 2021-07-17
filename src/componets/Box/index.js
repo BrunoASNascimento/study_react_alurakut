@@ -7,12 +7,12 @@ const Box = styled.div`
   padding: 16px;
 
   /* CSS Pré-Pronto */
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   .boxLink {
-    font-size: 14px;
+    font-size: 12px;
     color: #2e7bb4;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
   }
   .title {
     font-size: 32px;
